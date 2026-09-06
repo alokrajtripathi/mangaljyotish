@@ -75,6 +75,11 @@ export const metadata: Metadata = {
       'काशी के विद्वान ब्राह्मणों द्वारा वैदिक पूजा-पाठ, धार्मिक अनुष्ठान, फलित ज्योतिष, वास्तु शास्त्र एवं कुंडली परामर्श।',
     images: ['/images/logo.jpeg'],
   },
+  icons: {
+    icon: '/images/logo.jpeg',
+    shortcut: '/images/logo.jpeg',
+    apple: '/images/logo.jpeg',
+  },
   robots: {
     index: true,
     follow: true,
