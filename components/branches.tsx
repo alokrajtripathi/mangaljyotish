@@ -17,7 +17,7 @@ export function Branches() {
         <div className="mx-auto mt-12 grid max-w-4xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {branchList.map((branch, i) => (
             <Reveal
-              key={branch.name}
+              key={branch.name.en}
               delay={i * 90}
               className="group relative overflow-hidden rounded-2xl border border-border bg-card p-8 text-center transition-all hover:-translate-y-1 hover:border-accent hover:shadow-xl hover:shadow-primary/5"
             >
