@@ -54,7 +54,7 @@ export function Contact() {
     { icon: 'phone', label: t.labels.phone, value: contact.phone, href: contact.tel },
     { icon: 'whatsapp', label: t.labels.whatsapp, value: contact.phone, href: contact.whatsapp },
     { icon: 'mail', label: t.labels.email, value: contact.email, href: contact.mailto },
-    { icon: 'pin', label: t.labels.branches, value: contact.branches.join(' • ') },
+    { icon: 'pin', label: t.labels.branches, value: tr(contact.branches) },
     { icon: 'map', label: t.labels.serviceArea, value: tr(t.indiaWide) },
   ]
 

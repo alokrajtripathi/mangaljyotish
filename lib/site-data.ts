@@ -9,7 +9,10 @@ export const contact = {
   tel: 'tel:+919798802239',
   email: 'himanshujee802156@gmail.com',
   mailto: 'mailto:himanshujee802156@gmail.com',
-  branches: ['Varanasi', 'Ara', 'Patna'],
+  branches: {
+    hi: 'वाराणसी • आरा • पटना',
+    en: 'Varanasi • Ara • Patna',
+  } as Bilingual,
 }
 
 export const brand = {
@@ -227,10 +230,10 @@ export const gallery: {
   },
 ]
 
-export const branchList: { icon: string; name: string; type: Bilingual }[] = [
-  { icon: 'star', name: 'Varanasi', type: { hi: 'मुख्य शाखा', en: 'Main Branch' } },
-  { icon: 'pin', name: 'Ara', type: { hi: 'शाखा', en: 'Branch' } },
-  { icon: 'pin', name: 'Patna', type: { hi: 'शाखा', en: 'Branch' } },
+export const branchList: { icon: string; name: Bilingual; type: Bilingual }[] = [
+  { icon: 'star', name: { hi: 'वाराणसी', en: 'Varanasi' }, type: { hi: 'मुख्य शाखा', en: 'Main Branch' } },
+  { icon: 'pin', name: { hi: 'आरा', en: 'Ara' }, type: { hi: 'शाखा', en: 'Branch' } },
+  { icon: 'pin', name: { hi: 'पटना', en: 'Patna' }, type: { hi: 'शाखा', en: 'Branch' } },
 ]
 
 /* UI strings */

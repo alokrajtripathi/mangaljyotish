@@ -26,7 +26,7 @@ export function Branches() {
               >
                 <ServiceIcon name={branch.icon} className="size-8" />
               </span>
-              <h3 className="mt-5 font-display text-2xl text-primary">{branch.name}</h3>
+              <h3 className="mt-5 font-display text-2xl text-primary">{tr(branch.name)}</h3>
               <p className="mt-1 text-sm font-semibold uppercase tracking-widest text-secondary">
                 {tr(branch.type)}
               </p>

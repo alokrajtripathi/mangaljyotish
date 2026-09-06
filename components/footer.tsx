@@ -40,7 +40,7 @@ export function Footer() {
                     onClick={() => scrollTo(item.id)}
                     className="text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
-                    {item.label[lang]}
+                    {tr(item.label)}
                   </button>
                 </li>
               ))}
@@ -62,7 +62,7 @@ export function Footer() {
                 className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
               >
                 <ServiceIcon name="whatsapp" className="h-4 w-4 text-primary" />
-                WhatsApp
+                {tr(t.labels.whatsapp)}
               </a>
               <a
                 href={contact.mailto}
@@ -73,7 +73,7 @@ export function Footer() {
               </a>
               <p className="flex items-center gap-3 text-sm text-muted-foreground">
                 <ServiceIcon name="pin" className="h-4 w-4 text-primary" />
-                {contact.branches.join(' • ')}
+                {tr(contact.branches)}
               </p>
             </div>
           </div>
