@@ -1,13 +1,18 @@
 'use client'
 
+import { useState } from 'react'
+import { Sparkles, ArrowRight } from 'lucide-react'
 import { useLanguage } from './language-provider'
 import { services, t } from '@/lib/site-data'
 import { SectionHeading } from './section-heading'
 import { ServiceIcon } from './service-icon'
 import { Reveal } from './reveal'
+import { ServiceDetailModal } from './service-detail-modal'
 
 export function Services() {
-  const { tr } = useLanguage()
+  const { tr, lang } = useLanguage()
+  const [selectedService, setSelectedService] = useState<string | null>(null)
+  const isHindi = lang === 'hi'
 
   return (
     <section id="services" className="relative bg-muted/40 py-16 lg:py-24">
@@ -26,27 +31,47 @@ export function Services() {
               as="li"
               key={tr(s.name) + i}
               delay={(i % 3) * 70}
-              className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-1 hover:border-accent hover:shadow-xl hover:shadow-primary/5"
+              className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-1 hover:border-accent hover:shadow-xl hover:shadow-primary/5"
             >
-              <span
-                className="absolute right-0 top-0 h-24 w-24 translate-x-8 -translate-y-8 rounded-full bg-secondary/10 transition-transform duration-500 group-hover:scale-150"
-                aria-hidden="true"
-              />
-              <span className="relative flex size-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                <ServiceIcon name={s.icon} className="size-6" />
-              </span>
-              <h3 className="relative mt-4 font-display text-xl text-primary text-balance">
-                {tr(s.name)}
-              </h3>
-              {s.desc ? (
-                <p className="relative mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
-                  {tr(s.desc)}
-                </p>
-              ) : null}
+              <button
+                type="button"
+                onClick={() => setSelectedService(s.id)}
+                className="flex h-full w-full flex-col items-start text-left focus:outline-none"
+              >
+                <span
+                  className="absolute right-0 top-0 h-24 w-24 translate-x-8 -translate-y-8 rounded-full bg-secondary/10 transition-transform duration-500 group-hover:scale-150"
+                  aria-hidden="true"
+                />
+                <span className="relative flex size-12 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                  <ServiceIcon name={s.icon} className="size-6" />
+                </span>
+
+                <h3 className="relative mt-4 font-display text-xl font-bold text-primary text-balance">
+                  {tr(s.name)}
+                </h3>
+
+                {s.desc ? (
+                  <p className="relative mt-2 text-sm leading-relaxed text-muted-foreground text-pretty">
+                    {tr(s.desc)}
+                  </p>
+                ) : null}
+
+                <div className="relative mt-5 flex items-center gap-1.5 text-xs font-semibold text-accent transition group-hover:text-primary">
+                  <Sparkles className="size-3.5" />
+                  <span>{isHindi ? 'विस्तृत महत्व एवं लाभ देखें' : 'View Benefits & Significance'}</span>
+                  <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-1" />
+                </div>
+              </button>
             </Reveal>
           ))}
         </ul>
       </div>
+
+      <ServiceDetailModal
+        serviceId={selectedService}
+        onClose={() => setSelectedService(null)}
+      />
     </section>
   )
 }
+

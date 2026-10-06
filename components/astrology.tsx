@@ -1,14 +1,25 @@
 'use client'
 
-import { MessageCircle } from 'lucide-react'
+import { useState } from 'react'
+import { MessageCircle, Sparkles } from 'lucide-react'
 import { useLanguage } from './language-provider'
 import { astrologyTopics, contact, t } from '@/lib/site-data'
 import { SectionHeading } from './section-heading'
 import { ServiceIcon } from './service-icon'
 import { Reveal } from './reveal'
+import { ServiceDetailModal } from './service-detail-modal'
+
+const topicToServiceId: Record<number, string> = {
+  0: 'kundali',
+  1: 'marriage-obstacles',
+  2: 'griha-shanti',
+  3: 'graha-badha',
+}
 
 export function Astrology() {
-  const { tr } = useLanguage()
+  const { tr, lang } = useLanguage()
+  const [selectedService, setSelectedService] = useState<string | null>(null)
+  const isHindi = lang === 'hi'
 
   return (
     <section
@@ -33,14 +44,26 @@ export function Astrology() {
               as="li"
               key={topic.icon + i}
               delay={i * 80}
-              className="flex items-center gap-4 rounded-2xl border border-accent/30 bg-maroon/40 p-5 transition-all hover:border-accent hover:bg-maroon/60"
+              className="flex items-center justify-between rounded-2xl border border-accent/30 bg-maroon/40 p-5 transition-all hover:border-accent hover:bg-maroon/60"
             >
-              <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent">
-                <ServiceIcon name={topic.icon} className="size-6" />
-              </span>
-              <span className="text-base font-semibold text-cream text-pretty sm:text-lg">
-                {tr(topic.label)}
-              </span>
+              <button
+                type="button"
+                onClick={() => setSelectedService(topicToServiceId[i] ?? 'astrology')}
+                className="flex w-full items-center justify-between gap-4 text-left focus:outline-none"
+              >
+                <div className="flex items-center gap-4">
+                  <span className="flex size-12 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent">
+                    <ServiceIcon name={topic.icon} className="size-6" />
+                  </span>
+                  <span className="text-base font-semibold text-cream text-pretty sm:text-lg">
+                    {tr(topic.label)}
+                  </span>
+                </div>
+                <span className="flex items-center gap-1 text-xs font-semibold text-accent/80 hover:text-accent">
+                  <Sparkles className="size-3.5" />
+                  <span className="hidden sm:inline">{isHindi ? 'विवरण' : 'Details'}</span>
+                </span>
+              </button>
             </Reveal>
           ))}
         </ul>
@@ -57,6 +80,12 @@ export function Astrology() {
           </a>
         </div>
       </div>
+
+      <ServiceDetailModal
+        serviceId={selectedService}
+        onClose={() => setSelectedService(null)}
+      />
     </section>
   )
 }
+
