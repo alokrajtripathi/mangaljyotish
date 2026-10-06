@@ -19,7 +19,7 @@ const body = Mukta({
   display: 'swap',
 })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mangaljyotishparamarsh.com'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.mangaljyotishparamarash.in'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
