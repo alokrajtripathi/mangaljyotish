@@ -127,7 +127,15 @@ export const services: { id: string; icon: string; name: Bilingual; desc?: Bilin
   { id: 'navratri', icon: 'sparkles', name: { hi: 'नवरात्रि पूजा', en: 'Navratri Puja' } },
   { id: 'shatchandi', icon: 'book', name: { hi: 'शतचंडी पाठ', en: 'Shatchandi Paath' } },
   { id: 'navchandi', icon: 'book', name: { hi: 'नवचंडी पाठ', en: 'Navchandi Paath' } },
-  { id: 'pitru-paksha', icon: 'users', name: { hi: 'पितृ पक्ष पूजा', en: 'Pitru Paksha Puja' } },
+  {
+    id: 'pitru-dosh',
+    icon: 'users',
+    name: { hi: 'पितृ दोष निवारण', en: 'Pitru Dosh Nivaran' },
+    desc: {
+      hi: 'पितृ दोष एवं पूर्वजों से संबंधित बाधाओं की शांति के लिए वैदिक विधि से विशेष पूजा एवं अनुष्ठान।',
+      en: 'Special Vedic rituals and pujas for pacifying Pitru Dosh and ancestral impediments.',
+    },
+  },
   { id: 'astrology', icon: 'star', name: { hi: 'ज्योतिष परामर्श', en: 'Astrology Consultation' } },
   { id: 'kundali', icon: 'compass', name: { hi: 'कुंडली परामर्श', en: 'Kundali Consultation' } },
   { id: 'griha-shanti', icon: 'heart', name: { hi: 'गृह शांति', en: 'Peace at Home' } },

@@ -1416,6 +1416,203 @@ export const allPujaBenefitsData: Record<string, PujaBenefitItem> = {
     ],
   },
 
+  'pitru-dosh': {
+    id: 'pitru-dosh',
+    name: { hi: 'पितृ दोष निवारण पूजा', en: 'Pitru Dosh Nivaran Puja' },
+    mainDeity: { hi: 'पितृ देव, भगवान यमराज एवं भगवान विष्णु (गदाधर / जनार्दन)', en: 'Pitru Devatas, Lord Yamaraja & Lord Vishnu (Gadadhara / Janardana)' },
+    religiousPurpose: {
+      hi: 'पितृ दोष से संबंधित मान्यताओं में पूर्वजों की शांति एवं उनके निमित्त किए जाने वाले वैदिक कर्मकांडों का विशेष महत्व माना जाता है। उचित विधि एवं संकल्प के साथ किए गए अनुष्ठान पितृ शांति के लिए किए जाते हैं।',
+      en: 'In Vedic traditions, performing sacred rituals for ancestral peace is of paramount importance. Rites performed with proper resolve (Sankalp) seek peaceful deliverance for forebears.',
+    },
+    traditionalReason: {
+      hi: 'वैदिक एवं पौराणिक परंपराओं में श्राद्ध, तर्पण, त्रिपिंडी श्राद्ध तथा नारायण बलि जैसे कर्मकांडों का उल्लेख मिलता है। इनका उद्देश्य दिवंगत पूर्वजों के प्रति श्रद्धा एवं शांति की कामना करना है।',
+      en: 'Vedic and Puranic traditions mention rites such as Shraddha, Tarpan, Tripindi Shraddha, and Narayan Bali with the solemn aim of honoring ancestors and seeking their benevolent peace.',
+    },
+    specificObstacles: {
+      hi: 'धार्मिक मान्यतानुसार परिवार में बार-बार आने वाली परेशानियां, विवाह व संतान संबंधी बाधाएं तथा कुंडली में पितृ दोष जनित अशांति की शांति हेतु।',
+      en: 'Traditionally sought for persistent family impediments, marriage and progeny delays, and astrological Pitru Dosh afflictions.',
+    },
+    spiritualSignificance: {
+      hi: 'पूर्वजों के प्रति श्रद्धा, कृतज्ञता एवं सनातन संस्कारों का पालन करते हुए आत्मिक शांति की प्राप्ति।',
+      en: 'Expressing reverent gratitude to ancestors and attaining spiritual serenity through Sanatan filial duty.',
+    },
+    familySignificance: {
+      hi: 'परिवार में पितरों के शुभाशीर्वाद से सौहार्द, संतानों का सुसंस्कृत होना, वंश की निरंतरता एवं सुख-शांति।',
+      en: 'Harmonious family life blessed by ancestors, cultured upbringing of children, lineage continuity, and lasting peace.',
+    },
+    personalSignificance: {
+      hi: 'कर्तव्य बोध, मन में अपराधबोध से मुक्ति, आत्मिक शांति एवं जीवन में स्थिरता की अनुभूति।',
+      en: 'Fulfillment of duty, freedom from unresolved guilt, deep inner peace, and psychological groundedness.',
+    },
+    jyotishSignificance: {
+      hi: 'कुंडली में सूर्य-राहु युति, नवम भाव की पीड़ा अथवा पितृ दोष के पारंपरिक समाधान हेतु वैदिक अनुष्ठान सर्वोपरि कर्तव्य है।',
+      en: 'In Jyotish, Vedic rituals are the primary remedy for Sun-Rahu afflictions, 9th-house blemishes, and Pitru Dosha.',
+    },
+    categories: {
+      spiritual: [
+        { hi: 'दिवंगत पूर्वजों के प्रति श्रद्धा, स्मरण एवं कृतज्ञता प्रकट करने का पावन माध्यम।', en: 'Sacred medium to express gratitude and remembrance to departed ancestors.' },
+        { hi: 'आत्मा की अमरता और सनातन पुनर्जन्म दर्शन के प्रति गहरी समझ का विकास।', en: 'Deepening realization of soul immortality and cosmic rebirth.' },
+        { hi: 'सांसारिक अहंकार का त्याग और अपने मूल एवं पूर्वजों के प्रति विनम्रता।', en: 'Renouncing ego and bowing with humility before ancestral roots.' },
+        { hi: 'पितरों की संतुष्टि से आत्मिक शांति एवं चित्त की स्थिरता।', en: 'Attaining serene peace through ancestral contentment.' },
+      ],
+      religious: [
+        { hi: 'शास्त्रोक्त विधि से कुशा, तिल, जौ, अक्षत और जल द्वारा नित्य तर्पण कर्म।', en: 'Daily Tarpan using sacred Kusha grass, sesame seeds, barley, and water.' },
+        { hi: 'पिंडदान, विष्णुपद स्मरण, त्रिपिंडी श्राद्ध एवं नारायण बलि की शास्त्रसम्मत पूर्णता।', en: 'Proper Pinda Daan, Vishnupada remembrance, Tripindi Shraddha, and Narayan Bali.' },
+        { hi: 'पंचबलि (गौ, श्वान, काक, देवादि एवं पिपीलिका) का पारंपरिक समर्पण।', en: 'Offering traditional Panchabali to cows, dogs, crows, Devas, and ants.' },
+        { hi: 'योग्य ब्राह्मणों को भोजन, वस्त्र एवं यथायोग्य दक्षिणा द्वारा संतुष्ट करना।', en: 'Satisfying worthy Brahmins with food, clothing, and Dakshina.' },
+      ],
+      family: [
+        { hi: 'पितरों के आशीर्वाद से वंश परंपरा का निर्बाध संरक्षण एवं संतानों की प्रगति।', en: 'Ensuring seamless lineage continuity and children\'s progress.' },
+        { hi: 'पारिवारिक कलह और अज्ञात कारणों से उत्पन्न होने वाले तनाव का पारंपरिक शमन।', en: 'Pacifying domestic friction and unexplained hereditary anxieties.' },
+        { hi: 'परिवार में सुख, समृद्धि, एकता और संस्कारों की सुदृढ़ स्थापना।', en: 'Establishing lasting domestic peace, prosperity, and cultural roots.' },
+      ],
+      personal: [
+        { hi: 'अपने पूर्वजों के प्रति कर्तव्य पूर्ति से उत्पन्न गहरा आत्मसंतोष।', en: 'Deep psychological fulfillment born of duty discharged to forebears.' },
+        { hi: 'जीवन में आने वाली अनजानी रुकावटों के प्रति आध्यात्मिक समाधान का विश्वास।', en: 'Faith in spiritual resolution of persistent life bottlenecks.' },
+        { hi: 'संतान एवं परिवार के भविष्य के प्रति मानसिक शांति।', en: 'Peace of mind regarding future generations and children.' },
+      ],
+      specificPurpose: [
+        { hi: 'त्रिपिंडी श्राद्ध, नारायण बलि एवं नाग बलि जैसे विशेष अनुष्ठानों द्वारा पितृ शांति।', en: 'Pitru Shanti through Tripindi Shraddha, Narayan Bali, and Nag Bali.' },
+        { hi: 'पितृ लोक में स्थित पूर्वजों की तृप्ति एवं उनकी सद्गति हेतु प्रार्थना।', en: 'Praying for the peaceful onward journey and contentment of Pitrus.' },
+        { hi: 'ऋषि ऋण, देव ऋण के साथ पितृ ऋण से मुक्ति का सनातन प्रयास।', en: 'Fulfilling the fundamental filial debt (Pitru Rina) of householders.' },
+      ],
+    },
+    tableRows: [
+      {
+        benefit: { hi: 'आत्मिक शांति (Spiritual Peace)', en: 'Spiritual Peace' },
+        significance: {
+          hi: 'पूर्वजों के प्रति श्रद्धा व्यक्त करने से अंतर्मन का शोक और अपराधबोध शांत होकर गहरी शांति मिलती है।',
+          en: 'Brings immense psychological solace and contentment by honoring departed forebears.',
+        },
+      },
+      {
+        benefit: { hi: 'पितृ एवं विष्णु कृपा (Divine Blessings)', en: 'Divine Blessings' },
+        significance: {
+          hi: 'भगवान विष्णु (गदाधर) एवं संतुष्ट पितृ देवों का मंगलमय आशीर्वाद पूरे कुल को प्राप्त होता है।',
+          en: 'Dedicated to Pitru Devatas and Lord Vishnu, the eternal protector of ancestral realms.',
+        },
+      },
+      {
+        benefit: { hi: 'पारिवारिक एकता (Family Harmony)', en: 'Family Harmony' },
+        significance: {
+          hi: 'पूर्वजों के स्मरण से पूरे परिवार में आत्मीयता, बड़ों के प्रति आदर और कुल-परंपरा की सुदृढ़ता आती है।',
+          en: 'Unites family branches in solemn respect, strengthening lineage solidarity and values.',
+        },
+      },
+      {
+        benefit: { hi: 'दैवीय पितृ-कवच (Protection)', en: 'Protection' },
+        significance: {
+          hi: 'संतुष्ट पूर्वजों का आशीर्वाद संतान और परिवार पर एक सुरक्षा कवच के रूप में कार्य करता है।',
+          en: 'Invokes the protective benevolent aura of contented ancestors over descendants.',
+        },
+      },
+      {
+        benefit: { hi: 'वंश वृद्धि एवं समृद्धि (Prosperity)', en: 'Prosperity' },
+        significance: {
+          hi: 'पारंपरिक विश्वास के अनुसार पितरों के आशीर्वाद से वंश वृद्धि, संतानों का उज्ज्वल भविष्य और बरकत मिलती है।',
+          en: 'Traditionally linked with steady lineage growth, professional stability, and domestic peace.',
+        },
+      },
+      {
+        benefit: { hi: 'पितृ दोष निवारण (Removal of Obstacles)', en: 'Removal of Obstacles' },
+        significance: {
+          hi: 'विवाह, संतान अथवा कार्यों में पितृ दोष के कारण आने वाले अवरोधों की धार्मिक शांति होती है।',
+          en: 'Traditionally believed to mitigate Pitru Dosha hurdles in marriage, progeny, and work.',
+        },
+      },
+      {
+        benefit: { hi: 'कर्तव्य बोध व संतोष (Mental Peace)', en: 'Mental/Emotional Peace' },
+        significance: {
+          hi: 'माता-पिता व पूर्वजों के प्रति अपना धार्मिक कर्तव्य निभाने से अपार आत्मसंतोष और शांति मिलती है।',
+          en: 'Resolves latent filial guilt and emotional grief into serene gratitude without medical claims.',
+        },
+      },
+      {
+        benefit: { hi: 'संस्कार एवं कृतज्ञता (Spiritual Growth)', en: 'Spiritual Growth' },
+        significance: {
+          hi: 'जीवन की नश्वरता का बोध होकर व्यक्ति में अहंकार का त्याग, दानशीलता और विनम्रता का विकास होता है।',
+          en: 'Reinforces awareness of life\'s transience, cultivating humility, charity, and righteousness.',
+        },
+      },
+    ],
+    websiteBenefits: [
+      {
+        title: { hi: 'पितृ शांति की कामना', en: 'Seeking Ancestral Peace' },
+        explanation: {
+          hi: 'पूर्वजों की आत्मा की तृप्ति, शांति एवं सद्गति हेतु शास्त्रसम्मत वैदिक प्रार्थना व संकल्प।',
+          en: 'Solemn Vedic prayers and resolutions seeking peaceful onward journey and contentment for forebears.',
+        },
+      },
+      {
+        title: { hi: 'पूर्वजों के प्रति श्रद्धा एवं कृतज्ञता', en: 'Reverence and Filial Gratitude' },
+        explanation: {
+          hi: 'माता-पिता एवं पूर्वजों के उपकारों के प्रति कृतज्ञता ज्ञापन और सनातन कुल मर्यादा का पालन।',
+          en: 'Expressing heartfelt filial gratitude and upholding timeless Sanatan lineage traditions.',
+        },
+      },
+      {
+        title: { hi: 'पारिवारिक शांति एवं सकारात्मक वातावरण', en: 'Family Peace and Positive Energy' },
+        explanation: {
+          hi: 'घर के परिवेश से क्लेश, तनाव व अशांति दूर होकर परस्पर स्नेह एवं सकारात्मक ऊर्जा का संचार।',
+          en: 'Fostering mutual affection and replacing domestic tensions with serene spiritual positivity.',
+        },
+      },
+      {
+        title: { hi: 'पारंपरिक वैदिक कर्मकांड का पालन', en: 'Observance of Vedic Rites' },
+        explanation: {
+          hi: 'ऋषि-मुनियों द्वारा प्रतिपादित त्रिपिंडी श्राद्ध, तर्पण एवं पिंडदान की शुद्ध वैदिक रीति।',
+          en: 'Disciplined performance of Tripindi Shraddha, Tarpan, and Pinda Daan as ordained by Vedic sages.',
+        },
+      },
+      {
+        title: { hi: 'पितृ ऋण से संबंधित धार्मिक मान्यताओं में शांति की कामना', en: 'Discharging Sacred Filial Debt' },
+        explanation: {
+          hi: 'गृहस्थ जीवन के मूलभूत तीन ऋणों में से पितृ ऋण से मुक्ति हेतु धार्मिक विधान की पूर्णता।',
+          en: 'Fulfilling the fundamental spiritual duty of householders toward ancestral lineage.',
+        },
+      },
+      {
+        title: { hi: 'मानसिक एवं आध्यात्मिक संतुलन की भावना', en: 'Mental and Spiritual Equilibrium' },
+        explanation: {
+          hi: 'मन के अज्ञात भय, शोक एवं संशयों से मुक्ति मिलकर चित्त में धैर्य और आंतरिक शांति की अनुभूति।',
+          en: 'Bringing psychological grounding, relief from unexplained anxieties, and spiritual serenity.',
+        },
+      },
+      {
+        title: { hi: 'परिवार की सुख-समृद्धि की कामना', en: 'Prayers for Family Prosperity' },
+        explanation: {
+          hi: 'पितरों के शुभाशीर्वाद से कुल-परंपरा, संतानों की प्रगति एवं मंगलमय भविष्य की प्रार्थना।',
+          en: 'Seeking benign ancestral blessings for children\'s upright progress and domestic flourishing.',
+        },
+      },
+    ],
+    whyChooseKashiBrahmins: [
+      {
+        hi: 'काशी मोक्ष एवं श्राद्ध-तर्पण की अनादि राजधानी है, जहाँ पिशाचमोचन तीर्थ पर पितृ कर्म का विशेष महत्व है।',
+        en: 'Kashi is the sacred capital of Moksha, where Pishachmochan Teerth holds supreme importance for Pitru rites.',
+      },
+      {
+        hi: 'मातृकुल एवं पितृकुल के सभी पूर्वजों के गोत्र, प्रवर और नाम का यथायोग्य शास्त्रसम्मत उच्चारण।',
+        en: 'Exact knowledge of Gotra, Pravara, Pinda formation, and Tarpan mantras for maternal and paternal lineages.',
+      },
+      {
+        hi: 'त्रिपिंडी श्राद्ध, नारायण बलि एवं नाग बलि का शास्त्रोक्त विधि से पूर्ण निष्पादन।',
+        en: 'Proper execution of Tripindi Shraddha, Narayan Bali, and Nag Bali with classical Vedic accuracy.',
+      },
+      {
+        hi: 'प्रत्येक धार्मिक विधि (कुशा धारण, तिल अर्पण, पिंडदान) का यजमान को शुचिता से मार्गदर्शन।',
+        en: 'Sincere guidance ensuring no essential step or family relation is overlooked during invocations.',
+      },
+      {
+        hi: 'पंचबलि एवं ब्राह्मण भोजन का पूर्ण गरिमा, शुचिता एवं सम्मान के साथ संपादन।',
+        en: 'Conducting Panchabali and Brahmin Bhojan with highest decorum and scriptural propriety.',
+      },
+      {
+        hi: 'बिना किसी अनुचित दबाव के पूरी निष्ठा, मर्यादा एवं यथायोग्य दक्षिणा विधान।',
+        en: 'Transparent and respectful handling of all offerings without commercial exploitation.',
+      },
+    ],
+  },
   'pitru-paksha': {
     id: 'pitru-paksha',
     name: { hi: 'पितृ पक्ष पूजा / श्राद्ध एवं तर्पण', en: 'Pitru Paksha Puja / Shraddha & Tarpan' },
