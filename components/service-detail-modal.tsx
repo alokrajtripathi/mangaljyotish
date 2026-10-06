@@ -33,10 +33,8 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
   const [activeTab, setActiveTab] = useState<string>('benefits')
   const [expandedAnushthan, setExpandedAnushthan] = useState<number | null>(null)
 
-  const isPitruDosh = serviceId === 'pitru-dosh' || serviceId === 'pitru-paksha'
-  const serviceData: PujaBenefitItem | undefined = serviceId
-    ? allPujaBenefitsData[serviceId] || (isPitruDosh ? allPujaBenefitsData['pitru-dosh'] : undefined)
-    : undefined
+  const isPitruDosh = serviceId === 'pitru-dosh'
+  const serviceData: PujaBenefitItem | undefined = serviceId ? allPujaBenefitsData[serviceId] : undefined
 
   useEffect(() => {
     setActiveTab('benefits')

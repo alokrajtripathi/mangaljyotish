@@ -127,6 +127,7 @@ export const services: { id: string; icon: string; name: Bilingual; desc?: Bilin
   { id: 'navratri', icon: 'sparkles', name: { hi: 'नवरात्रि पूजा', en: 'Navratri Puja' } },
   { id: 'shatchandi', icon: 'book', name: { hi: 'शतचंडी पाठ', en: 'Shatchandi Paath' } },
   { id: 'navchandi', icon: 'book', name: { hi: 'नवचंडी पाठ', en: 'Navchandi Paath' } },
+  { id: 'pitru-paksha', icon: 'users', name: { hi: 'पितृ पक्ष पूजा', en: 'Pitru Paksha Puja' } },
   {
     id: 'pitru-dosh',
     icon: 'users',
