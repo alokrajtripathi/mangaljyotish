@@ -88,7 +88,7 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
                 : 'border-transparent text-muted-foreground hover:text-foreground'
             }`}
           >
-            {isHindi ? 'विस्तृत लाभ (Benefits)' : 'Detailed Benefits'}
+            {isHindi ? 'विस्तृत लाभ' : 'Detailed Benefits'}
           </button>
           <button
             onClick={() => setActiveTab('table')}
@@ -98,7 +98,7 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
                 : 'border-transparent text-muted-foreground hover:text-foreground'
             }`}
           >
-            {isHindi ? 'लाभ तालिका (Table)' : 'Benefits Table'}
+            {isHindi ? 'लाभ तालिका' : 'Benefits Table'}
           </button>
           <button
             onClick={() => setActiveTab('kashi')}
