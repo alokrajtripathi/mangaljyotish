@@ -250,41 +250,37 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
             <>
               <button
                 onClick={() => setActiveTab('benefits')}
-                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${
-                  activeTab === 'benefits'
+                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${activeTab === 'benefits'
                     ? 'border-primary text-primary'
                     : 'border-transparent text-muted-foreground hover:text-foreground'
-                }`}
+                  }`}
               >
                 {isHindi ? 'विस्तृत लाभ' : 'Detailed Benefits'}
               </button>
               <button
                 onClick={() => setActiveTab('vidhi')}
-                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${
-                  activeTab === 'vidhi'
+                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${activeTab === 'vidhi'
                     ? 'border-primary text-primary'
                     : 'border-transparent text-muted-foreground hover:text-foreground'
-                }`}
+                  }`}
               >
                 {isHindi ? 'पूजा विधि' : 'Puja Vidhi'}
               </button>
               <button
                 onClick={() => setActiveTab('kashi')}
-                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${
-                  activeTab === 'kashi'
+                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${activeTab === 'kashi'
                     ? 'border-primary text-primary'
                     : 'border-transparent text-muted-foreground hover:text-foreground'
-                }`}
+                  }`}
               >
                 {isHindi ? 'काशी में क्यों?' : 'Why in Kashi?'}
               </button>
               <button
                 onClick={() => setActiveTab('contact')}
-                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${
-                  activeTab === 'contact'
+                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${activeTab === 'contact'
                     ? 'border-primary text-primary'
                     : 'border-transparent text-muted-foreground hover:text-foreground'
-                }`}
+                  }`}
               >
                 {isHindi ? 'संपर्क / बुकिंग' : 'Contact & Booking'}
               </button>
@@ -293,31 +289,28 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
             <>
               <button
                 onClick={() => setActiveTab('benefits')}
-                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${
-                  activeTab === 'benefits'
+                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${activeTab === 'benefits'
                     ? 'border-primary text-primary'
                     : 'border-transparent text-muted-foreground hover:text-foreground'
-                }`}
+                  }`}
               >
                 {isHindi ? 'विस्तृत लाभ' : 'Detailed Benefits'}
               </button>
               <button
                 onClick={() => setActiveTab('table')}
-                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${
-                  activeTab === 'table'
+                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${activeTab === 'table'
                     ? 'border-primary text-primary'
                     : 'border-transparent text-muted-foreground hover:text-foreground'
-                }`}
+                  }`}
               >
                 {isHindi ? 'लाभ तालिका' : 'Benefits Table'}
               </button>
               <button
                 onClick={() => setActiveTab('kashi')}
-                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${
-                  activeTab === 'kashi'
+                className={`whitespace-nowrap border-b-2 px-4 py-3 text-sm font-semibold transition ${activeTab === 'kashi'
                     ? 'border-primary text-primary'
                     : 'border-transparent text-muted-foreground hover:text-foreground'
-                }`}
+                  }`}
               >
                 {isHindi ? 'काशी के ब्राह्मण क्यों?' : 'Why Kashi Brahmins?'}
               </button>
@@ -556,7 +549,7 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
                     {isHindi ? 'मुख्य संपर्क सूत्र' : 'Direct Contact'}
                   </span>
                   <div className="mt-3 space-y-2 text-xs sm:text-sm text-foreground">
-                    <p><strong>{isHindi ? 'शास्त्री जी:' : 'Astrologer:'}</strong> {contact.expert}</p>
+                    <p><strong>{isHindi ? 'शास्त्री जी:' : 'Astrologer:'}</strong> Shastri Himanshu Tripathi</p>
                     <p><strong>{isHindi ? 'फ़ोन नंबर:' : 'Phone:'}</strong> {contact.phone}</p>
                     <p><strong>{isHindi ? 'ईमेल:' : 'Email:'}</strong> {contact.email}</p>
                   </div>
@@ -769,8 +762,8 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
             {isPitruDosh
               ? (isHindi ? 'पितृ दोष निवारण पूजा के लिए संपर्क करें' : 'Contact for Pitru Dosh Nivaran Puja')
               : (isHindi
-                  ? 'प्रत्येक अनुष्ठान वैदिक विधि-विधान एवं निष्ठापूर्वक संपन्न कराया जाता है।'
-                  : 'Each ritual is performed strictly adhering to Vedic traditions and devotion.')}
+                ? 'प्रत्येक अनुष्ठान वैदिक विधि-विधान एवं निष्ठापूर्वक संपन्न कराया जाता है।'
+                : 'Each ritual is performed strictly adhering to Vedic traditions and devotion.')}
           </p>
 
           <div className="flex items-center gap-2.5">
