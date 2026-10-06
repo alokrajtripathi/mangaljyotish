@@ -146,9 +146,9 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
                     <div key={idx} className="flex gap-3 rounded-xl border border-border/80 bg-muted/20 p-3.5 transition hover:border-accent/50">
                       <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-primary" />
                       <div>
-                        <h4 className="text-sm font-semibold text-foreground">{item.title}</h4>
+                        <h4 className="text-sm font-semibold text-foreground">{tr(item.title)}</h4>
                         <p className="mt-1 text-xs sm:text-sm text-muted-foreground leading-relaxed">
-                          {item.explanation}
+                          {tr(item.explanation)}
                         </p>
                       </div>
                     </div>
@@ -156,7 +156,7 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
                 </div>
               </div>
 
-              {/* Specific Categories A-D */}
+              {/* Specific Categories A-E */}
               <div className="rounded-2xl border border-border bg-card p-4">
                 <h4 className="font-display text-base font-bold text-primary">
                   {isHindi ? 'पारंपरिक लाभ वर्गीकरण' : 'Traditional Benefit Classifications'}
@@ -171,7 +171,7 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
                       {serviceData.categories.spiritual.map((pt, i) => (
                         <li key={i} className="flex items-start gap-1.5">
                           <span className="text-primary">•</span>
-                          <span>{pt}</span>
+                          <span>{tr(pt)}</span>
                         </li>
                       ))}
                     </ul>
@@ -185,7 +185,7 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
                       {serviceData.categories.religious.map((pt, i) => (
                         <li key={i} className="flex items-start gap-1.5">
                           <span className="text-primary">•</span>
-                          <span>{pt}</span>
+                          <span>{tr(pt)}</span>
                         </li>
                       ))}
                     </ul>
@@ -199,7 +199,7 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
                       {serviceData.categories.family.map((pt, i) => (
                         <li key={i} className="flex items-start gap-1.5">
                           <span className="text-primary">•</span>
-                          <span>{pt}</span>
+                          <span>{tr(pt)}</span>
                         </li>
                       ))}
                     </ul>
@@ -213,11 +213,27 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
                       {serviceData.categories.personal.map((pt, i) => (
                         <li key={i} className="flex items-start gap-1.5">
                           <span className="text-primary">•</span>
-                          <span>{pt}</span>
+                          <span>{tr(pt)}</span>
                         </li>
                       ))}
                     </ul>
                   </div>
+
+                  {serviceData.categories.specificPurpose && serviceData.categories.specificPurpose.length > 0 && (
+                    <div className="rounded-xl bg-muted/40 p-3 sm:col-span-2">
+                      <span className="text-xs font-bold uppercase text-primary">
+                        {isHindi ? 'E. विशिष्ट उद्देश्य एवं संकल्प' : 'E. Specific Purpose & Sankalp'}
+                      </span>
+                      <ul className="mt-2 space-y-1.5 text-xs sm:text-sm text-muted-foreground">
+                        {serviceData.categories.specificPurpose.map((pt, i) => (
+                          <li key={i} className="flex items-start gap-1.5">
+                            <span className="text-primary">•</span>
+                            <span>{tr(pt)}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -235,18 +251,18 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
                 <table className="w-full text-left text-xs sm:text-sm">
                   <thead className="border-b border-border bg-muted/70 text-xs font-bold uppercase text-primary">
                     <tr>
-                      <th className="px-4 py-3 sm:px-6">{isHindi ? 'लाभ (Benefit)' : 'Benefit'}</th>
-                      <th className="px-4 py-3 sm:px-6">{isHindi ? 'पारंपरिक महत्व (Traditional Significance)' : 'Traditional Significance'}</th>
+                      <th className="px-4 py-3 sm:px-6">{isHindi ? 'लाभ' : 'Benefit'}</th>
+                      <th className="px-4 py-3 sm:px-6">{isHindi ? 'पारंपरिक महत्व' : 'Traditional Significance'}</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-border">
                     {serviceData.tableRows.map((row, idx) => (
                       <tr key={idx} className="hover:bg-muted/30">
                         <td className="whitespace-nowrap px-4 py-3.5 font-semibold text-foreground sm:px-6">
-                          {row.benefit}
+                          {tr(row.benefit)}
                         </td>
                         <td className="px-4 py-3.5 text-muted-foreground sm:px-6">
-                          {row.significance}
+                          {tr(row.significance)}
                         </td>
                       </tr>
                     ))}
@@ -276,7 +292,7 @@ export function ServiceDetailModal({ serviceId, onClose }: ServiceDetailModalPro
                 {serviceData.whyChooseKashiBrahmins.map((item, idx) => (
                   <div key={idx} className="flex gap-3 rounded-xl border border-border bg-muted/20 p-4">
                     <ChevronRight className="mt-0.5 size-4 shrink-0 text-accent" />
-                    <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">{item}</p>
+                    <p className="text-xs sm:text-sm text-foreground/90 leading-relaxed">{tr(item)}</p>
                   </div>
                 ))}
               </div>
