@@ -23,41 +23,75 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://mangaljyotishparama
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: 'मंगल ज्योतिष परामर्श केंद्र | Mangal Jyotish Paramarsh Kendra - शास्त्री हिमांशु त्रिपाठी जी',
+  title: {
+    default: 'मंगल ज्योतिष परामर्श केंद्र | शास्त्री हिमांशु त्रिपाठी जी - वैदिक पूजा-पाठ एवं ज्योतिष',
+    template: '%s | मंगल ज्योतिष परामर्श केंद्र',
+  },
   description:
-    'काशी के विद्वान ब्राह्मणों द्वारा वैदिक पूजा-पाठ, धार्मिक अनुष्ठान, फलित ज्योतिष, वास्तु शास्त्र एवं कुंडली परामर्श — शास्त्री हिमांशु त्रिपाठी जी। वाराणसी, आरा, पटना एवं पूरे भारत में सेवाएं।',
-  generator: 'v0.app',
+    'काशी (वाराणसी) के विद्वान ब्राह्मणों द्वारा वैदिक पूजा-पाठ, रुद्राभिषेक, महामृत्युंजय जाप, शतचंडी पाठ, गृह प्रवेश, वास्तु शांति एवं फलित ज्योतिष कुंडली परामर्श — शास्त्री हिमांशु त्रिपाठी जी। वाराणसी, आरा, पटना एवं सम्पूर्ण भारत में सेवाएं उपलब्ध।',
+  applicationName: 'मंगल ज्योतिष परामर्श केंद्र',
+  authors: [{ name: 'शास्त्री हिमांशु त्रिपाठी जी (Shastri Himanshu Tripathi Ji)', url: siteUrl }],
+  generator: 'Next.js',
+  creator: 'शास्त्री हिमांशु त्रिपाठी जी',
+  publisher: 'मंगल ज्योतिष परामर्श केंद्र',
+  category: 'Astrology, Vedic Rituals, Religion & Spirituality',
   keywords: [
-    'पूजा पाठ',
-    'वैदिक कर्मकांड',
-    'ज्योतिष परामर्श',
-    'कुंडली परामर्श',
-    'वास्तु शास्त्र',
-    'फलित ज्योतिष',
+    // Hindi Keywords
+    'मंगल ज्योतिष परामर्श केंद्र',
+    'शास्त्री हिमांशु त्रिपाठी',
+    'वैदिक पूजा पाठ',
     'धार्मिक अनुष्ठान',
-    'हवन',
-    'रुद्राभिषेक',
-    'गृह शांति',
+    'रुद्राभिषेक वाराणसी',
+    'महामृत्युंजय जाप',
     'गृह प्रवेश पूजा',
-    'pooja path',
-    'Vedic rituals',
-    'astrology consultation',
-    'kundali consultation',
-    'vastu shastra',
-    'spiritual guidance',
-    'Hindu rituals Varanasi',
-    'Shastri Himanshu Tripathi',
+    'शतचंडी पाठ',
+    'नवचंडी पाठ',
+    'बगलामुखी पूजन',
+    'कालसर्प दोष निवारण',
+    'ग्रह बाधा निवारण',
+    'कुंडली परामर्श',
+    'फलित ज्योतिष',
+    'वास्तु शास्त्र विशेषज्ञ',
+    'पितृ पक्ष श्राद्ध तर्पण',
+    'शादी में बाधा निवारण',
+    'काशी के पंडित जी',
+    'वाराणसी पूजा बुकिंग',
+    'आरा ज्योतिष केंद्र',
+    'पटना पूजा पाठ',
+    // English Keywords
+    'Mangal Jyotish Paramarsh Kendra',
+    'Shastri Himanshu Tripathi Ji',
+    'Vedic pujas in Varanasi',
+    'Kashi Brahmins for puja',
+    'Rudrabhishek in Varanasi',
+    'Mahamrityunjaya Jaap anushthan',
+    'Griha Pravesh puja vidhi',
+    'Shatchandi Paath yagya',
+    'Baglamukhi pujan',
+    'Kaal Sarp dosh remedy',
+    'Kundali consultation online',
+    'Predictive Vedic astrology',
+    'Vastu Shastra consultant India',
+    'Pitru Paksha Shraddha Tarpan',
+    'Marriage obstacle astrological guidance',
+    'Best astrologer in Varanasi',
+    'Hindu religious rituals India',
   ],
   alternates: {
     canonical: '/',
+    languages: {
+      'hi-IN': '/',
+      'en-IN': '/',
+    },
   },
   openGraph: {
-    title: 'मंगल ज्योतिष परामर्श केंद्र | शास्त्री हिमांशु त्रिपाठी जी',
+    title: 'मंगल ज्योतिष परामर्श केंद्र | शास्त्री हिमांशु त्रिपाठी जी - वैदिक पूजा एवं ज्योतिष',
     description:
-      'काशी के विद्वान ब्राह्मणों द्वारा वैदिक पूजा-पाठ, धार्मिक अनुष्ठान, फलित ज्योतिष, वास्तु शास्त्र एवं कुंडली परामर्श। पूरे भारत में सेवाएं उपलब्ध।',
-    url: '/',
-    siteName: brand.name.hi,
+      'काशी के विद्वान ब्राह्मणों द्वारा संपूर्ण वैदिक विधि-विधान से पूजा-पाठ, धार्मिक अनुष्ठान एवं सटीक ज्योतिषीय मार्गदर्शन। वाराणसी, आरा, पटना एवं पूरे भारत में सेवाएं।',
+    url: siteUrl,
+    siteName: 'मंगल ज्योतिष परामर्श केंद्र (Mangal Jyotish Paramarsh Kendra)',
     locale: 'hi_IN',
+    alternateLocale: ['en_IN'],
     type: 'website',
     images: [
       {
@@ -65,6 +99,12 @@ export const metadata: Metadata = {
         width: 800,
         height: 800,
         alt: 'मंगल ज्योतिष परामर्श केंद्र - शास्त्री हिमांशु त्रिपाठी जी',
+      },
+      {
+        url: '/images/shastri-ji.jpeg',
+        width: 800,
+        height: 1000,
+        alt: 'शास्त्री हिमांशु त्रिपाठी जी - फलित ज्योतिष एवं कर्मकांड विशेषज्ञ',
       },
     ],
   },
@@ -83,6 +123,19 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  other: {
+    'geo.region': 'IN-UP',
+    'geo.placename': 'Varanasi',
+    'geo.position': '25.3176;82.9739',
+    ICBM: '25.3176, 82.9739',
   },
 }
 
@@ -110,3 +163,4 @@ export default function RootLayout({
     </html>
   )
 }
+

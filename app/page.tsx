@@ -8,6 +8,7 @@ import { Services } from '@/components/services'
 import { Astrology } from '@/components/astrology'
 import { Gallery } from '@/components/gallery'
 import { Branches } from '@/components/branches'
+import { FAQSection } from '@/components/faq'
 import { Contact } from '@/components/contact'
 import { Footer } from '@/components/footer'
 import { FloatingActions } from '@/components/floating-actions'
@@ -25,6 +26,7 @@ export default function Page() {
         <Astrology />
         <Gallery />
         <Branches />
+        <FAQSection />
         <Contact />
       </main>
       <Footer />
@@ -32,3 +34,4 @@ export default function Page() {
     </LanguageProvider>
   )
 }
+

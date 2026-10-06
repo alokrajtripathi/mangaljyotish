@@ -59,6 +59,7 @@ export const nav: { id: string; label: Bilingual }[] = [
   { id: 'astrology', label: { hi: 'ज्योतिष परामर्श', en: 'Astrology' } },
   { id: 'gallery', label: { hi: 'गैलरी', en: 'Gallery' } },
   { id: 'branches', label: { hi: 'शाखाएं', en: 'Branches' } },
+  { id: 'faq', label: { hi: 'प्रश्नोत्तरी', en: 'FAQ' } },
   { id: 'contact', label: { hi: 'संपर्क करें', en: 'Contact' } },
 ]
 
@@ -312,6 +313,11 @@ export const t = {
     branches: { hi: 'शाखाएं', en: 'Branches' },
     serviceArea: { hi: 'सेवा क्षेत्र', en: 'Service Area' },
   },
+  faqHeading: { hi: 'अक्सर पूछे जाने वाले प्रश्न', en: 'Frequently Asked Questions' },
+  faqSub: {
+    hi: 'पूजा-पाठ, वैदिक अनुष्ठान एवं ज्योतिष परामर्श से जुड़े प्रमुख प्रश्नों के उत्तर।',
+    en: 'Answers to common questions regarding Vedic pujas, rituals, and astrology consultations.',
+  },
   footer: {
     tagline: { hi: 'आस्था • परंपरा • वैदिक मार्गदर्शन', en: 'Faith • Tradition • Vedic Guidance' },
     quickLinks: { hi: 'त्वरित लिंक', en: 'Quick Links' },
@@ -321,3 +327,67 @@ export const t = {
     },
   },
 }
+
+export const faqs: { q: Bilingual; a: Bilingual }[] = [
+  {
+    q: {
+      hi: 'पूजा-पाठ एवं धार्मिक अनुष्ठान संपन्न कराने की क्या प्रक्रिया है?',
+      en: 'What is the procedure for booking and conducting a Vedic puja or ritual?',
+    },
+    a: {
+      hi: 'आप वेबसाइट पर दिए गए WhatsApp अथवा सीधे फोन नंबर पर संपर्क कर सकते हैं। शास्त्री हिमांशु त्रिपाठी जी आपकी आवश्यकता, गोत्र, स्थान और जन्म विवरण के आधार पर शुभ मुहूर्त का निर्धारण करते हैं। इसके पश्चात आवश्यक वैदिक सामग्री एवं विद्वान ब्राह्मणों के साथ अनुष्ठान पूर्ण विधि-विधान से संपन्न कराया जाता है।',
+      en: 'You can reach out via WhatsApp or phone call. Shastri Himanshu Tripathi Ji calculates an auspicious Muhurat based on your requirements, Gotra, location, and birth chart. The ceremony is then conducted with authentic Vedic samagri and learned Brahmins following Shastric rules.',
+    },
+  },
+  {
+    q: {
+      hi: 'क्या पूरे भारत में घर अथवा प्रतिष्ठान पर आकर पूजा कराई जाती है?',
+      en: 'Are puja services available in-person across India at homes or business premises?',
+    },
+    a: {
+      hi: 'हाँ, हमारी मुख्य शाखाएं वाराणसी (मुख्य केंद्र), आरा एवं पटना में स्थित हैं। इसके अतिरिक्त पूरे भारत में यजमान के घर, व्यावसायिक प्रतिष्ठान, नवनिर्मित भवन अथवा तीर्थ स्थलों पर उपस्थित होकर वैदिक पूजा-पाठ, गृह प्रवेश, यज्ञ एवं हवन संपन्न कराए जाते हैं।',
+      en: 'Yes, our primary branches are located in Varanasi (Main Center), Ara, and Patna. Furthermore, Shastri Ji and experienced Brahmins travel across India to perform Griha Pravesh, Yagyas, Havans, and custom rituals directly at your home, business establishment, or pilgrimage sites.',
+    },
+  },
+  {
+    q: {
+      hi: 'काशी (वाराणसी) के विद्वान ब्राह्मणों द्वारा पूजा कराने का क्या विशेष महत्व है?',
+      en: 'What is the traditional significance of having rituals conducted by Kashi Brahmins?',
+    },
+    a: {
+      hi: 'काशी अनादि काल से सनातन संस्कृति, वेद विद्या एवं कर्मकांड की पावन राजधानी रही है। काशी के विद्वान ब्राह्मणों द्वारा शुद्ध संस्कृत उच्चारण, स्वर-युक्त वैदिक मंत्रोच्चार, शास्त्रसम्मत संकल्प और निष्ठापूर्वक पूजा संपन्न कराई जाती है, जिससे अनुष्ठान की आध्यात्मिक पवित्रता बनी रहती है।',
+      en: 'Varanasi (Kashi) is the timeless spiritual capital of Vedic learning and Karmakand traditions. Learned Brahmins of Kashi perform rituals with precise Sanskrit metrics (Chhanda), authentic Swara, and complete devotional decorum, preserving the true sanctity of Vedic rites.',
+    },
+  },
+  {
+    q: {
+      hi: 'क्या दूरस्थ / ऑनलाइन संकल्प के माध्यम से भी पूजा-पाठ संभव है?',
+      en: 'Is remote or online Sankalp puja possible for devotees unable to travel?',
+    },
+    a: {
+      hi: 'हाँ, जो भक्त किन्हीं कारणों से काशी या पूजा स्थल पर उपस्थित नहीं हो सकते, उनके नाम, गोत्र एवं कुल के निमित्त काशी के पावन गंगा तट अथवा प्रतिष्ठित मंदिर परिसर में शास्त्रोक्त संकल्प लेकर पूजा संपन्न कराई जाती है और उसका संपूर्ण विवरण यजमान को उपलब्ध कराया जाता है।',
+      en: 'Yes, for devotees unable to travel, authentic Sankalp is taken in their name and Gotra at holy Kashi Ganga ghats or sanctified temple altars, and comprehensive photo/video verification and consecrated prasad are arranged.',
+    },
+  },
+  {
+    q: {
+      hi: 'ज्योतिष एवं जन्मकुंडली परामर्श हेतु किन विवरणों की आवश्यकता होती है?',
+      en: 'What details are required for an Astrology and Kundali consultation?',
+    },
+    a: {
+      hi: 'सटीक जन्मकुंडली विश्लेषण के लिए जातक की सही जन्म तिथि (Date of Birth), जन्म समय (Birth Time) और जन्म स्थान (Place of Birth) आवश्यक है। यदि जन्म समय ज्ञात न हो, तो प्रश्न कुंडली (Prashna Kundali) अथवा फलित सिद्धांतों के आधार पर मार्गदर्शन प्रदान किया जाता है।',
+      en: 'For precise Kundali analysis, your Date of Birth, exact Time of Birth, and Place of Birth are required. If exact birth time is unavailable, guidance is provided through traditional Prashna Kundali (horary astrology) and astrological principles.',
+    },
+  },
+  {
+    q: {
+      hi: 'कालसर्प, ग्रह दोष अथवा विवाह बाधा के लिए क्या समाधान दिए जाते हैं?',
+      en: 'What remedies are recommended for Kaal Sarp, planetary doshas, or marriage obstacles?',
+    },
+    a: {
+      hi: 'हम केवल शास्त्रसम्मत एवं सात्विक वैदिक उपाय (जैसे विशिष्ट मंत्र जप, स्तोत्र पाठ, व्रत, सात्विक दान, रुद्राभिषेक एवं ग्रह शांति हवन) का परामर्श देते हैं। हम किसी प्रकार के अंधविश्वास, डराने वाले दावों अथवा जादुई भविष्यवाणियों को बढ़ावा नहीं देते।',
+      en: 'We strictly recommend scriptural, satvik Vedic remedies—such as personalized mantra chanting, Stotra recitations, fasting, charitable donations, Rudrabhishek, and planetary pacification Havans. We never encourage superstitions or make unrealistic deterministic claims.',
+    },
+  },
+]
+
