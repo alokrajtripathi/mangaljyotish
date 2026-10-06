@@ -40,13 +40,13 @@ export function Navbar() {
           className="flex items-center gap-3 text-left"
           aria-label={brand.name.hi}
         >
-          <span className="relative block size-12 shrink-0 overflow-hidden rounded-full ring-2 ring-accent/60 sm:size-14">
+          <span className="relative block size-13 shrink-0 overflow-hidden rounded-full ring-2 ring-accent/60 shadow-md sm:size-16">
             <Image
               src={brand.logo || '/placeholder.svg'}
               alt={tr(brand.name)}
               fill
               className="object-cover"
-              sizes="56px"
+              sizes="(max-width: 640px) 52px, 64px"
               priority
             />
           </span>

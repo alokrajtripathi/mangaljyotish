@@ -18,13 +18,21 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3">
-              <span className="relative h-14 w-14 overflow-hidden rounded-full ring-1 ring-primary/50">
-                <Image src={brand.logo || "/placeholder.svg"} alt={tr(brand.name)} fill className="object-cover" />
+            <div className="flex items-center gap-4 sm:gap-5">
+              <span className="relative size-20 sm:size-24 md:size-28 shrink-0 overflow-hidden rounded-full ring-2 ring-primary/40 shadow-lg shadow-primary/10 bg-maroon-deep/5">
+                <Image
+                  src={brand.logo || "/placeholder.svg"}
+                  alt={tr(brand.name)}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 80px, (max-width: 768px) 96px, 112px"
+                  priority
+                />
               </span>
               <div>
-                <p className="font-display text-lg leading-tight text-foreground">{tr(brand.name)}</p>
-                <p className="text-sm text-primary">{tr(brand.expert)}</p>
+                <p className="font-display text-lg sm:text-xl font-bold leading-tight text-foreground">{tr(brand.name)}</p>
+                <p className="mt-1 text-sm sm:text-base font-semibold text-primary">{tr(brand.expert)}</p>
+                <p className="mt-1 text-xs text-muted-foreground">{tr(brand.title)}</p>
               </div>
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{tr(t.footer.tagline)}</p>
