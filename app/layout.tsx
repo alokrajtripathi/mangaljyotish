@@ -144,6 +144,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  verification: {
+    google: '34hD-1NZN1bJdBrFql8ROWv0l9jQDGWAGL13tUEVtWI',
+  },
   other: {
     'geo.region': 'IN-UP',
     'geo.placename': 'Varanasi',
@@ -167,6 +170,7 @@ export default function RootLayout({
   return (
     <html lang="hi" className={`${display.variable} ${body.variable} bg-background`}>
       <head>
+        <meta name="google-site-verification" content="34hD-1NZN1bJdBrFql8ROWv0l9jQDGWAGL13tUEVtWI" />
         <StructuredData />
       </head>
       <body className="antialiased">
