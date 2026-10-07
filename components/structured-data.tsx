@@ -1,7 +1,10 @@
 import { brand, contact, services, faqs, branchList, nav } from '@/lib/site-data'
 
+const CANONICAL_SITE_URL = 'https://www.mangaljyotishparamarash.in'
+
 export function StructuredData() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.mangaljyotishparamarash.in'
+  const envUrl = process.env.NEXT_PUBLIC_SITE_URL
+  const siteUrl = (envUrl && !envUrl.includes('.com') ? envUrl : CANONICAL_SITE_URL).replace(/\/$/, '')
 
   const structuredDataGraph = {
     '@context': 'https://schema.org',
